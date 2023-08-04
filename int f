@@ -1,0 +1,14 @@
+#include <iostream>
+ 
+int main()
+{
+	int a = 10;
+	int& b = a;
+ 
+	const int& c = 20;
+ 
+	double d = 15.3;
+	int f = d;
+	const int& e = d;
+	return 0;
+}
