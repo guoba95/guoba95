@@ -1,0 +1,9 @@
+ private void increaseCapacity() {
+        capacity *= 2; // 扩大两倍
+        Object[] newArray = new Object[capacity];
+        for (int i = 0; i < size; i++) {
+            newArray[i] = array[i];
+        }
+        array = newArray;
+    }
+}
