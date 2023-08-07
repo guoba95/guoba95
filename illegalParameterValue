@@ -1,0 +1,12 @@
+void currency::setValue(signType theSign, unsigned long theDollars, unsigned int theCents)
+{
+    if(theCent > 99)
+        throw illegalParameterValue("Cents should be < 100");
+    
+    sign = theSign;
+    dollars = theDollars;
+    cents = theCents;
+}
+​
+void currency::setValue(double theAmount)
+{
